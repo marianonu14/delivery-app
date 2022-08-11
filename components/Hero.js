@@ -4,9 +4,9 @@ const Hero = () => {
     return ( 
         <div>
             <div>
-                <div className="absolute w-full h-[500px] text-4xl text-white bg-black/70 flex flex-col md:flex-row items-center justify-evenly top-15 z-10">
+                <div className="absolute w-full h-[500px] text-4xl text-white bg-black/70 flex flex-col md:flex-row items-center md:justify-evenly justify-center gap-10 top-15 z-10">
                     <h1 className="text-3xl md:text-5xl">The <span className="font-bold text-orange-600">Best</span> Food in <span className="font-bold text-orange-600">Town</span></h1>
-                    <button className={btnClass} >Order Now</button>
+                    <button className={btnClass}>Order Now</button>
                 </div>
                 <div className="hero relative h-[500px]"></div>
             </div>  
