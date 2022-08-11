@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  button {
+    @apply rounded-xl px-5 py-1
+  }
+}
+
+.hero {
+  background-image: url(../public/image_hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+}
