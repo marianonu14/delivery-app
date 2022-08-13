@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import ButtonMeals from './UI/ButtonMeals'
-import CardsMeals from './UI/CardsMeals'
+import ButtonMeals from './ButtonMeals'
+import CardsMeals from './CardsMeals'
 
 import { data } from '../data/data' 
 
-const Main = () => {
+const Meals = () => {
     const [btnSearch, setBtnSearch] = useState('burger');
     const [btnSelected , setBtnSelected] = useState({
         burger: true,
@@ -34,7 +34,7 @@ const Main = () => {
     }
 
     return ( 
-        <div className="bg-gray-900 h-full">
+        <div className="bg-gray-900 h-full shadow-2xl py-5">
             <h1 className='text-center p-10 text-orange-500 font-bold text-3xl md:text-5xl'>Our <span className='text-white'>Meals</span></h1>
             <div className='flex flex-wrap justify-evenly gap-5 p-10'>
                 <ButtonMeals title={'Burger'} selected={btnSelected.burger} handleBtn={handleBtn}/>
@@ -50,4 +50,4 @@ const Main = () => {
      );
 }
  
-export default Main;
+export default Meals;

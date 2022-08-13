@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import HeadlineCards from '../components/HeadlineCards'
 import Hero from '../components/Hero'
-import Main from '../components/Main'
+import Meals from '../components/Meals'
 import Navbar from '../components/Navbar'
+import Menu from '../components/Menu'
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <HeadlineCards />
-      <Main />
+      <Meals />
+      <Menu />
     </div>
   )
 }
