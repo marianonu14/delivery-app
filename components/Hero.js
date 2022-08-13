@@ -1,6 +1,6 @@
 
 const Hero = () => {
-    const btnClass = "bg-orange-600 rounded-full px-6 py-4 md:px-8 md:py-4 text-lg md:text-3xl hover:bg-white hover:text-orange-600 hover:duration-500"
+    const btnClass = "bg-orange-600 rounded-full px-12 py-4 md:px-8 md:py-4 text-lg md:text-3xl hover:bg-white hover:text-orange-600 hover:duration-500"
     
     return ( 
         <div className="shadow-xl">
