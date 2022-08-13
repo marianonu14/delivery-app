@@ -6,7 +6,7 @@ const ButtonMeals = (props) => {
 
     return ( 
         <div>
-            <button className={ props.selected ? btnSelected : btnDisabled} onClick={props.handleBtn}>{props.title}<BsCartPlus /></button>
+            <button className={ props.selected ? btnSelected : btnDisabled} onClick={() => props.handleBtn(props.title.toLowerCase())}>{props.title}<BsCartPlus /></button>
         </div>
      );
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { BsCartPlus } from 'react-icons/bs'
 
 const Card = (props) => {
-    const btnClass = "flex justify-center items-center gap-4 bg-gray-900 text-orange-500  rounded-full p-3 text-xl hover:bg-white hover:text-orange-600 hover:duration-500 w-2/3 mx-auto"
+    const btnClass = "flex justify-center items-center gap-4 bg-gray-900 text-orange-500  rounded-full p-3 text-xl hover:bg-white hover:text-orange-500 hover:duration-500 w-2/3 mx-auto"
 
     return ( 
     <div className="card-container flex flex-col justify-between p-5 gap-3 rounded-xl w-full md:w-[480px] mx-auto max-h-[300px]">

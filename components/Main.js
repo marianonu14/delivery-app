@@ -5,21 +5,33 @@ import CardsMeals from './UI/CardsMeals'
 import { data } from '../data/data' 
 
 const Main = () => {
-    console.log(data)
-    
-    const [btnSearch, setBtnSearch] = useState('pizza');
-    const [btnSelected , setBtnSelete] = useState({
+    const [btnSearch, setBtnSearch] = useState('burger');
+    const [btnSelected , setBtnSelected] = useState({
         burger: true,
         pizza: false,
         salad:false,
         chicken: false
     })
-
-    const handleBtn = (e) => {
-        console.log(e)
-    }
-
+    
     const arraySelect = data.filter(elem => elem.category === btnSearch);
+    
+    const handleBtn = (val) => {
+        
+        setBtnSearch(val);
+
+        const prevSelected = Object.keys(btnSelected)
+        .filter(items => btnSelected[items] === true)
+
+        let newObject = {};
+
+        newObject[val] = true;
+        newObject[prevSelected] = false;
+
+        setBtnSelected(btnSelected => ({
+            ...btnSelected,
+            ...newObject
+        }))
+    }
 
     return ( 
         <div className="bg-gray-900 h-full">

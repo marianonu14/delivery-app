@@ -9,7 +9,7 @@ import { MdHelp,MdFavorite } from 'react-icons/md'
 const Navbar = () => {
     const [nav, setNav]  = useState(false)
     return ( 
-        <div className='max-w-[1640px] mx-auto flex justify-between items-center p-4'>
+        <div className='fixed w-full mx-auto flex justify-between items-center p-3 z-20 bg-white'>
             <div className='flex items-center gap-2'>
                 <div className='cursor-pointer' onClick={() => setNav(!nav)}>
                     <AiOutlineMenu size={30} />
