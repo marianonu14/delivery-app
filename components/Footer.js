@@ -2,7 +2,7 @@ const Footer = () => {
     const classLi = 'p-1 flex items-center cursor-pointer hover:text-white'
 
     return (
-        <div className=" bg-gray-900 h-full p-10">
+        <div className=" bg-gray-900 h-full p-5">
             <div className="grid md:grid-cols-3 p-10">
                 <div className="p-5">
                     <h2 className="text-2xl text-orange-500 p-2">Services</h2>
@@ -36,7 +36,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <p className="block text-white text-center text-xl p-5">Mariano Nuñez - All Right Reserved &copy; - {new Date().getFullYear()}</p>
+            <p className="block text-white text-center text-lg py-5">Mariano Nuñez - All Right Reserved &copy; - {new Date().getFullYear()}</p>
         </div> 
 
      );
