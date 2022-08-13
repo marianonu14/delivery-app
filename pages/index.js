@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import HeadlineCards from '../components/HeadlineCards'
+import Headline from '../components/Headline'
 import Hero from '../components/Hero'
 import Meals from '../components/Meals'
 import Navbar from '../components/Navbar'
@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <HeadlineCards />
+      <Headline />
       <Meals />
       <Menu />
       <Footer />

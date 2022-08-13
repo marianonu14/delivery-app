@@ -42,7 +42,7 @@ const Meals = () => {
                 <ButtonMeals title={'Salad'} selected={btnSelected.salad} handleBtn={handleBtn}/>
                 <ButtonMeals title={'Chicken'} selected={btnSelected.chicken} handleBtn={handleBtn}/>
             </div>
-            <div className='flex flex-wrap md:flex-row justify-evenly gap-10 p-5'>
+            <div className='grid grid-cols-2 md:flex gap-10 p-5'>
                 {arraySelect.map(items => 
                 <CardsMeals key={items.id} img={items.image} name={items.name} price={items.price}  />)}   
             </div>
